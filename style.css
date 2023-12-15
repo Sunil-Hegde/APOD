@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'spaceregular';
+    src: url('./Font/space-webfont.woff2') format('woff2'),
+         url('./Font/space-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background-color: beige;
+    }
+    h1 {
+        font-family: 'spaceregular';
+        margin-top: 0;
+        display: flex;
+        text-align: center;
+        line-height: 60px;
+    }
+    #mainBox{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    img{
+        height: auto;
+        width: 40vw;
+        margin: 20px;
+        min-width: 350px;
+    }
+    .rightBox{
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer{
+        display: flex;
+        padding: 10px 0;
+        width: 100%;
+        background-color: #0D1117;
+        color: aliceblue;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        margin: 0 auto;
+    }
+    @media screen and (width < 900px){
+        #mainBox{
+            flex-direction: column;
+        }
+    }
